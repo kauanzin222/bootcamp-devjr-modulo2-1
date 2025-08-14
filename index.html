@@ -10,37 +10,48 @@
             background-color: #F5F5F5;
         }
         
+        /*Creation of CONTAINER, a main box that can have div(s)*/
         .container {
             background-color: #E9E9E9;
-            margin: auto;
+            margin: auto; /*set the position of the intire box to adaptate to the web page*/
 
-            width: 600px;
+            width: 600px; /*width = "largura"... it's define how large will be the box named as CONTAINER*/ 
+
+            box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+            /*1ºpx is 'x', 2ºpx is 'y', 3ºpx is blur, 4ºpx is area*/
+
+            border-radius: 5px;
+            overflow: hidden; /*this set make the border of my container look rounded*/
         }
 
+        /*Denominating the HEADER, that's the top of the container*/
         .header {
-            padding: 20px;
+            padding: 20px; /*padding is like a margin but only for the header, the top of our container*/
         }
 
+        /*Creation of FLEX-CONTAINER, a subdivision of the container that can be modify as I want*/
         .flex-container {
-            display: flex;
+            display: flex; /*that make rows in my bottom div. As default, the value of flex is 'row'*/
+            /*flex-position: row; ---- is another way to do this*/
+
             background-color: #006969;
-            justify-content: space-around;
+            justify-content: space-around; /*here we can make our 'columns' look centralized, more cleaner*/
             padding: 20px;
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container"> 
         <div class="header"> 
-            Primeira linha
+            First line
         </div>
-        <div class="flex-container">
+        <div class="flex-container"> 
             <div>
-                Coluna 1
+                Column 1
             </div>
             <div>
-                Coluna 2
+                Column 2
             </div>
         </div>
     </div>
