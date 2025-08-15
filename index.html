@@ -8,6 +8,8 @@
     <style>
         body {
             background-color: #F5F5F5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 100px;
         }
         
         /*Creation of CONTAINER, a main box that can have div(s)*/
@@ -26,7 +28,7 @@
 
         /*Denominating the HEADER, that's the top of the container*/
         .header {
-            padding: 20px; /*padding is like a margin but only for the header, the top of our container*/
+            padding: 40px; /*padding is like a margin but only for the header, the top of our container*/
         }
 
         /*Creation of FLEX-CONTAINER, a subdivision of the container that can be modify as I want*/
@@ -39,12 +41,36 @@
             padding: 20px;
         }
 
+        .header-title {
+            color: #006666;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .header-subtitle {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #098685;
+            font-weight: 500;
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="container"> 
         <div class="header"> 
-            First line
+            <div class="header-title">
+                Join our community!
+            </div>
+            <div class="header-subtitle">
+                Make your subscription now and win 30% of discount!
+            </div>
+            <div>
+                Join our developers community. <br>
+                Have our team support and grow your career faster!
+            </div>
         </div>
         <div class="flex-container"> 
             <div>
