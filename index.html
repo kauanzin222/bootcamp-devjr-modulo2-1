@@ -35,10 +35,8 @@
         .flex-container {
             display: flex; /*that make rows in my bottom div. As default, the value of flex is 'row'*/
             /*flex-position: row; ---- is another way to do this*/
-
-            background-color: #006969;
             justify-content: space-around; /*here we can make our 'columns' look centralized, more cleaner*/
-            padding: 20px;
+            
         }
 
         .header-title {
@@ -53,6 +51,60 @@
             font-size: 18px;
             color: #098685;
             font-weight: 500;
+        }
+
+        .col1 {
+            color: #F5F5F5;
+            background-color: #006969;
+            width: 50%;
+            padding: 15px;
+            height: 200px;   
+        }
+
+        .col1-title {
+            font-weight: 450;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        
+        .price {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+            opacity: 0.8;
+        }
+        .col1-txt {
+            opacity: 0.8;
+            margin-bottom: 20px
+        }
+       
+        .col1-button {
+            text-align: center;
+            width: 100%;
+            padding: 15px 32px;
+            background-color: #CCCCCC;
+            color: #006969;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .col1-button:hover {
+            background-color: #E9E9E9;
+        }
+
+        .col2 {
+            background-color: #008C8C;
+            width: 50%;
+            padding: 15px;
         }
 
         
@@ -72,11 +124,21 @@
                 Have our team support and grow your career faster!
             </div>
         </div>
-        <div class="flex-container"> 
-            <div>
-                Column 1
+        <div class="flex-container">
+            <div class="col1">
+                <div class="col1-title">
+                   Monthly subscription:
+                </div>
+                <div>
+                    <span class="price">$ 99.99</span> 
+                    <span class="month">per month.</span>
+                </div>
+                <div class="col1-txt">
+                    Cancel at any time.
+                </div>
+                <button class="col1-button">Subscribe now</button>
             </div>
-            <div>
+            <div class="col2">
                 Column 2
             </div>
         </div>
