@@ -1,141 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootCamp DevJr - Sistema de Assinaturas</title>
-
-    <style>
-        body {
-            background-color: #F5F5F5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-top: 100px;
-        }
-        
-        /*Creation of CONTAINER, a main box that can have div(s)*/
-        .container {
-            background-color: #E9E9E9;
-            margin: auto; /*set the position of the intire box to adaptate to the web page*/
-
-            width: 600px; /*width = "largura"... it's define how large will be the box named as CONTAINER*/ 
-            box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
-            /*1ºpx is 'x', 2ºpx is 'y', 3ºpx is blur, 4ºpx is area*/
-            border-radius: 5px;
-            overflow: hidden; /*this set make the border of my container look rounded*/
-        }
-
-        /*Denominating the HEADER, that's the top of the container*/
-        .header {
-            padding: 2.5rem; /*padding is like a margin but only for the header, the top of our container*/
-        }
-
-        /*Creation of FLEX-CONTAINER, a subdivision of the container that can be modify as I want*/
-        .flex-container {
-            display: flex; /*that make rows in my bottom div. As default, the value of flex is 'row'*/
-            /*flex-position: row; ---- is another way to do this*/
-            justify-content: space-around; /*here we can make our 'columns' look centralized, more cleaner*/
-            
-        }
-
-        .header-title {
-            color: #006666;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.25rem;
-        }
-
-        .header-subtitle {
-            margin-bottom: 0.93rem;
-            font-size: 1.12rem;
-            color: #098685;
-            font-weight: 500;
-        }
-
-        .col1 {
-            color: #F5F5F5;
-            background-color: #006969;
-            width: 50%;
-            padding: 0.93rem;
-            height: auto;   
-        }
-
-        .col1-title {
-            font-weight: 450;
-            text-align: center;
-            margin-bottom: 1.25rem;
-            font-size: 1.12rem;
-        }
-
-        
-        .price {
-            font-size: 1.6rem;
-            font-weight: 700;
-        }
-
-        .month {
-            font-size: 0.93rem;
-            font-style: italic;
-            margin-left: 0.93rem;
-            opacity: 0.8;
-        }
-        .col1-txt {
-            opacity: 0.8;
-            margin-bottom: 1.87rem;
-        }
-       
-        .col1-button {
-            text-align: center;
-            width: 100%;
-            padding: 0.93rem 2rem;
-            background-color: #CCCCCC;
-            color: #006969;
-            font-size: 1rem;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .col1-button:hover {
-            background-color: #E9E9E9;
-        }
-
-        .col2 {
-            background-color: #008C8C;
-            width: 50%;
-            padding: 0.2rem 0.93rem;
-            font-size: 1rem;
-            color: #F5F5F5;
-        }
-
-        .image-group {
-           text-align: center;
-        }
-
-        @media screen and (max-width: 620px) { /*when webpage gets width 620px, everything will be affected by this set*/
-            html {
-                font-size: 14px;
-            }
-
-            .container {
-                width: 95%;
-            }
-
-            .flex-container {
-                flex-direction: column;
-            }
-
-            .col1, .col2 {
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
-        
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container"> 
-        <div class="header"> 
+    <div class="container">
+        <div class="header">
             <div class="header-title">
                 Join our community!
             </div>
@@ -150,10 +25,10 @@
         <div class="flex-container">
             <div class="col1">
                 <div class="col1-title">
-                   Monthly subscription:
+                    Monthly subscription:
                 </div>
                 <div>
-                    <span class="price">$ 99.99</span> 
+                    <span class="price">$ 99.99</span>
                     <span class="month">per month.</span>
                 </div>
                 <div class="col1-txt">
@@ -166,30 +41,31 @@
                     <object data="groups_2_45dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" type="image/svg+xml"></object>
                 </div>
                 <div>
-                You'll have acess to:
-                <ul>
-                    <li>
-                        Exclusive projects
-                    </li>
-                    <li>
-                        Tutorials
-                    </li>
-                    <li>
-                        Weekly lives
-                    </li>
-                    <li>
-                        Didatic especialized material
-                    </li>
-                    <li>
-                        Forum
-                    </li>
-                    <li>
-                       Job offer
-                    </li>
-                </ul>
+                    You'll have acess to:
+                    <ul>
+                        <li>
+                            Exclusive projects
+                        </li>
+                        <li>
+                            Tutorials
+                        </li>
+                        <li>
+                            Weekly lives
+                        </li>
+                        <li>
+                            Didatic especialized material
+                        </li>
+                        <li>
+                            Forum
+                        </li>
+                        <li>
+                            Job offer
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
